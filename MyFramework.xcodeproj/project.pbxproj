@@ -10,6 +10,7 @@
 		6BFC12461E9F36470092A2FA /* MyFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFC123C1E9F36470092A2FA /* MyFramework.framework */; };
 		6BFC124B1E9F36470092A2FA /* MyFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFC124A1E9F36470092A2FA /* MyFrameworkTests.swift */; };
 		6BFC124D1E9F36470092A2FA /* MyFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BFC123F1E9F36470092A2FA /* MyFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BFC12571E9F36F50092A2FA /* AddingTwoNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFC12561E9F36F50092A2FA /* AddingTwoNumbers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		6BFC12451E9F36470092A2FA /* MyFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BFC124A1E9F36470092A2FA /* MyFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFrameworkTests.swift; sourceTree = "<group>"; };
 		6BFC124C1E9F36470092A2FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BFC12561E9F36F50092A2FA /* AddingTwoNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddingTwoNumbers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				6BFC123F1E9F36470092A2FA /* MyFramework.h */,
 				6BFC12401E9F36470092A2FA /* Info.plist */,
+				6BFC12561E9F36F50092A2FA /* AddingTwoNumbers.swift */,
 			);
 			path = MyFramework;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					6BFC123B1E9F36470092A2FA = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					6BFC12441E9F36470092A2FA = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BFC12571E9F36F50092A2FA /* AddingTwoNumbers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +325,7 @@
 		6BFC12511E9F36470092A2FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -331,6 +337,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.clorssoftware.MyFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -338,6 +345,7 @@
 		6BFC12521E9F36470092A2FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +364,7 @@
 		6BFC12541E9F36470092A2FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = MyFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.clorssoftware.MyFrameworkTests;
@@ -367,6 +376,7 @@
 		6BFC12551E9F36470092A2FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = MyFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.clorssoftware.MyFrameworkTests;
